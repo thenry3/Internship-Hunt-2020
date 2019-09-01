@@ -11,3 +11,4 @@ while True:
     if subprocess.getoutput('diff internships2020.csv internships2020-1.csv') != "":
         sendSMS()
     subprocess.run(['cp', "internships2020-1.csv", "internships2020.csv"])
+    time.sleep(0.5)
